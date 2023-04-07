@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+/* ============================= =================================
+                          CSS VARIABLES
+============================= ================================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+:root {
+  --darken: #3F3D41;
+  --lite: #FFDBDA;
+
+  /* --ff-h: 'Ubuntu', sans-serif; */
+  --ff-p: 'Roboto', sans-serif;
+
+  --fz-lg: 2rem;
+  --fz-md: 1.6rem;
+  --fz-sm: 1.4rem;
+
+  --bold: 700;
+  --regular: 400;
+}
+
+/* ============================= =================================
+                         Global Styles
+============================= ================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: var(--darken);
+  font-size: 10px;
+  font-family: var(--ff-p);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 98%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.main-header,
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+.links {
+  gap: 1em;
+}
