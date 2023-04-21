@@ -1,1 +1,8 @@
-<p>recipe-list works!</p>
+<div class="recipe-list__btn">
+  <button mat-raised-button color="accent">
+    <mat-icon>Add_post</mat-icon>
+    New Recipe</button>
+</div>
+<mat-divider></mat-divider>
+<app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl"
+  (recipeSelected)="onRecipeSelected(recipeEl)"></app-recipe-item>

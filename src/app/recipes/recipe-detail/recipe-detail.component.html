@@ -1,1 +1,25 @@
-<p>recipe-detail works!</p>
+<div class="recipe-detail">
+  <div class="recipe-detail__img">
+    <img [src]="recipe.imagePath" alt="{{ recipe.name }}">
+  </div>
+  <div class="recipe-detail__name">
+    <h2>{{ recipe.name }}</h2>
+  </div>
+  <div class="recipe-detail__actions">
+    <mat-menu #appMenu="matMenu">
+      <button mat-menu-item>To shopping list</button>
+      <button mat-menu-item>Edit recipe</button>
+      <button mat-menu-item>Delete recipe</button>
+    </mat-menu>
+    <button mat-flat-button [matMenuTriggerFor]="appMenu">
+      <span>Manage Recipe</span>
+      <mat-icon>expand_more</mat-icon>
+    </button>
+  </div>
+  <div class="recipe-details__desc">
+    <p>{{ recipe.description }}</p>
+  </div>
+  <div class="recipe-details__ingredients">
+    <p>ingredients</p>
+  </div>
+</div>

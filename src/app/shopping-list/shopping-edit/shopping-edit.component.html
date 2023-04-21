@@ -1,1 +1,17 @@
-<p>shopping-edit works!</p>
+<div class="shopping-edit__wrapper">
+  <div class="shopping-edit__inputs">
+    <mat-form-field class="shopping-edit__name">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" #nameInput>
+    </mat-form-field>
+    <mat-form-field class="shopping-edit__amout">
+      <mat-label>Amount</mat-label>
+      <input matInput type="number" placeholder="0" #amountInput>
+    </mat-form-field>
+  </div>
+  <div class="shopping-edit__controls">
+    <button mat-flat-button color="accent" (click)="addIngridient()">Add ingradient</button>
+    <button mat-flat-button color="warn" (click)="deleteIngredient()">Delete</button>
+    <button mat-flat-button color="primary" (click)="clearIngredientForm()">Clear</button>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.shopping-edit__inputs {
+  width: 50%;
+  display: flex;
+  gap: 1em;
+}
+.shopping-edit__name {
+  flex-grow: 2;
+}
+.shopping-edit__controls {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}

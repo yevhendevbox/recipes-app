@@ -1,1 +1,8 @@
-<p>shopping-list works!</p>
+<div>
+  <app-shopping-edit (newIngredient)="onAddIngredient($event)"></app-shopping-edit>
+  <mat-divider></mat-divider>
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let ingredient of ingredients">{{ ingredient.name }} - {{ ingredient.amount
+      }}</mat-list-item>
+  </mat-list>
+</div>
